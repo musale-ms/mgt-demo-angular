@@ -14,14 +14,11 @@ import { GetComponent } from './get/get.component';
     NavBarComponent,
     AgendaComponent,
     ToDoComponent,
-    GetComponent
+    GetComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}
