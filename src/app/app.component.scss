@@ -1,3 +1,10 @@
 mgt-login {
     background-color: yellow;
 }
+
+.main {
+    margin-top: 19px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+}
