@@ -1,6 +1,6 @@
 <app-nav-bar></app-nav-bar>
 
-<main class="main">
+<main *ngIf="this.isLoggedIn()" class="main">
   <app-agenda></app-agenda>
   <app-todo></app-todo>
   <app-get></app-get>

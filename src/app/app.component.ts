@@ -15,15 +15,17 @@ import '@microsoft/mgt-components';
 })
 export class AppComponent implements OnInit {
   title: string = 'MGT V3 Preview 1';
-  isLoggedIn: boolean = false;
 
   constructor() {}
+
+  public isLoggedIn(): boolean {
+    return Providers.globalProvider.state === ProviderState.SignedIn;
+  }
 
   ngOnInit(): void {
     Providers.globalProvider = new Msal2Provider({
       clientId: environment.clientId,
     });
     TemplateHelper.setBindingSyntax('[[', ']]');
-    this.isLoggedIn = Providers.globalProvider.state === ProviderState.SignedIn;
   }
 }
